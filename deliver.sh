@@ -18,7 +18,10 @@ echo 'The following complex command behaves similarly to the previous one but'
 echo 'extracts the value of the <version/> element within <project/> instead.'
 set -x
 VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`
-# set +x
+set +x
+
+set -x
+mvn wildfly:deploy
 
 # echo 'The following command runs and outputs the execution of your Java'
 # echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
