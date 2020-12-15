@@ -31,7 +31,7 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh "chmod 0777 ${env.WORKSPACE}"
-                sh './jenkins/scripts/deliver.sh'
+                sh './deliver.sh'
             }
         }
         stage("Publish to Nexus Repository Manager") {
