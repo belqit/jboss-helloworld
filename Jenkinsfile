@@ -71,12 +71,7 @@ pipeline {
         }
         stage('Deploy on beta') {
             steps {
-                dir('development') {
-                    // Back to the docker container, execute deploy of the generated jar to the beta server using maven wildfly plugin
-                    script {
-                        sh 'mvn -B -DjbossHost=localhost:8082 -DjbossUser=admin -DjbossPass=password wildfly:deploy-only -Papp-beta'
-                    }
-                }
+                sh 'mvn wildfly:deploy' 
             }
         }
         // stage('Deploy on beta') {

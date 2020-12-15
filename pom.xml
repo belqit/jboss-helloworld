@@ -38,6 +38,10 @@
         <groupId>org.wildfly.plugins</groupId>
         <artifactId>wildfly-maven-plugin</artifactId>
         <version>2.0.0.Final</version>
+        <configuration>
+          <username>ste</username>
+          <password>betacom1</password>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
