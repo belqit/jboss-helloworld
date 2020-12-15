@@ -71,7 +71,7 @@ pipeline {
         }
         stage('Deploy on beta') {
             steps {
-                sh 'mvn wildfly:deploy-only -Pstandaone-mode -Dwildfly.username=ste -Dwildfly.password=betacom1' 
+                sh 'mvn wildfly:deploy -Dwildfly.username=ste -Dwildfly.password=betacom1' 
             }
         }
         // stage('Deploy on beta') {

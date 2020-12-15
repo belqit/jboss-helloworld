@@ -37,7 +37,7 @@
       <plugin>
         <groupId>org.wildfly.plugins</groupId>
         <artifactId>wildfly-maven-plugin</artifactId>
-        <version>2.0.0.Final</version>
+        <version>20.0.1.Final</version>
         <configuration>
           <username>ste</username>
           <password>betacom1</password>
