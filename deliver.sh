@@ -21,7 +21,7 @@ VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`
 set +x
 
 set -x
-mvn wildfly:deploy -Dwildfly.username=ste -Dwildfly.password=betacom1 
+mvn wildfly:deploy -Dwildfly.username=ste -Dwildfly.password=betacom1 -X 
 
 # echo 'The following command runs and outputs the execution of your Java'
 # echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
