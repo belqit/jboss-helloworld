@@ -5,7 +5,7 @@ pipeline {
     //         args '-v /root/.m2:/root/.m2' 
     //     }
     // }
-    agent none
+    agent any
     environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
